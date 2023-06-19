@@ -567,6 +567,23 @@ section .title::after{
   color: #80ced6;
   background: none;
 }
+
+.right form .button-area a{
+    display: inline-block;
+    background: #80ced6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #80ced6;
+    transition: all 0.3s ease;
+}
+.right form .button-area a{
+    color: #80ced6;
+    background: none;
+}
 /* footer section styling */
 footer{
     background: #111;
