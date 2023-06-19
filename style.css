@@ -548,7 +548,7 @@ section .title::after{
   display: flex;
   align-items: center;
 }
-.right form .button-area a{
+.right form .button-area button{
   color: #fff;
   display: block;
   width: 160px!important;
@@ -563,7 +563,7 @@ section .title::after{
   border: 2px solid #80ced6;
   transition: all 0.3s ease;
 }
-.right form .button-area a:hover{
+.right form .button-area button:hover{
   color: #80ced6;
   background: none;
 }
