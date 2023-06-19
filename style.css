@@ -568,7 +568,7 @@ section .title::after{
   background: none;
 }
 
-.right form .button-area a{
+/* .right form .button-area a{
     display: inline-block;
     background: #80ced6;
     color: #fff;
@@ -583,7 +583,7 @@ section .title::after{
 .right form .button-area a{
     color: #80ced6;
     background: none;
-}
+} */
 /* footer section styling */
 footer{
     background: #111;
