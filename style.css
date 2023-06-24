@@ -170,13 +170,12 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("images/background.png") no-repeat center;
-  height: 50vh;
-  width: 500vh;
+  background: url("images/banner.jpg") no-repeat center;
+  height: 100vh;
   color: #fff;
   min-height: 500px;
-  background-size: cover;
-  background-attachment: fixed;
+  //background-size: cover;
+  //background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
 .home .max-width {
@@ -190,7 +189,7 @@ section .title::after {
   color: #80ced6;
 }
 .home .home-content .text-2 {
-  font-size: 62px;
+  font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
   color: #40c1de;
