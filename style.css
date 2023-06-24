@@ -171,7 +171,8 @@ section .title::after {
 .home {
   display: flex;
   background: url("images/background.png") no-repeat center;
-  height: 100vh;
+  height: 50vh;
+  width: 500vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
