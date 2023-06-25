@@ -170,7 +170,7 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("images/banner.jpg") no-repeat center;
+  background: url("images/background.png") no-repeat center;
   background-size: cover;
   height: 100vh;
   min-height: 500px;
@@ -233,6 +233,7 @@ section .title::after {
   color: #80ced6;
   background: none;
 }
+
 
 
 /* about section styling */
