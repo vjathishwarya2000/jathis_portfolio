@@ -219,7 +219,7 @@ section .title::after {
   color: #80ced6;
   background: none;
 }
-/* .home .home_img {
+.home .home_img {
   background: url('images/faviconW.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -231,9 +231,9 @@ section .title::after {
   height: 300px;
   animation: profile_animate 8s ease-in-out infinite 1s;
   display: flex;
-  justify-content: flex-end; /* Align the image to the right side 
-} */
-/* @keyframes profile_animate {
+  justify-content: flex-end; /* Align the image to the right side */
+}
+@keyframes profile_animate {
   0% {
     border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
   }
@@ -243,7 +243,7 @@ section .title::after {
   100% {
     border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
   }
-} */
+}
 
 /* about section styling */
 .about .title::after {
@@ -773,5 +773,31 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .home .home_img {
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .home .home_img {
+    box-shadow: inset 0 0 0 6px rgb(255 255 255/30%);
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .home .home_img {
+    width: 180px;
+    height: 180px;
   }
 }
