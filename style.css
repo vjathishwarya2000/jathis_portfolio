@@ -39,6 +39,7 @@ section {
 .services,
 .skills,
 .teams,
+.exp,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -497,6 +498,95 @@ section .title::after {
   background: #80ced6 !important;
 }
 
+/* Add white space between .teams and .exp sections */
+.section-gap {
+  height: 100px; /* Adjust the height of the white gap */
+  background: #fff; /* White background color */
+}
+
+
+/* Match the styling of .exp with .teams */
+.exp {
+  color: #fff;
+  background: #111; /* Same background as .teams */
+  padding: 100px 0; /* Same padding as .teams */
+}
+
+.exp .title::after {
+  content: ""; /* Add subtitle similar to .teams */
+}
+
+.exp .carousel .card {
+  background: #222; /* Same background for cards as .teams */
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.exp .carousel .card:hover {
+  background: #80ced6; /* Same hover effect as .teams */
+}
+
+.exp .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.exp .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.exp .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.exp .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #80ced6; /* Same border as .teams */
+  transition: all 0.3s ease;
+}
+
+.exp .carousel .card:hover img {
+  border-color: #fff; /* Change border color on hover */
+}
+
+/* Match the dots navigation styling for .exp */
+.exp .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.exp .owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #80ced6 !important;
+  transition: all 0.3s ease;
+}
+
+.exp .owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.exp .owl-dot.active,
+.exp .owl-dot:hover {
+  background: #80ced6 !important;
+}
+
+
 /* contact section styling */
 .contact .title::after {
   content: "get in touch";
@@ -775,6 +865,48 @@ footer span a:hover {
     line-height: 38px;
   }
 }
+
+/* Customize the card in the Experience section */
+.exp .card {
+  
+  border-radius: 6px; /* Optional: rounded corners */
+  padding: 20px; /* Padding around the content */
+  text-align: center; /* Center-align the content */
+  overflow: hidden;
+  width: auto; /* Adjust width automatically */
+  margin: 0 auto; /* Center the card horizontally */
+  transition: all 0.3s ease;
+}
+
+/* Style the box inside the card */
+.exp .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the image as a rectangle */
+.exp .card img {
+  background: #222; /*Background color for the card*/
+  display: block; /* Ensure the image displays as a block element */
+  width: auto; /* Maintain the original width of the image */
+  height: auto; /* Maintain the original height of the image */
+  max-width: 100%; /* Ensure the image fits inside the card */
+  max-height: 300px; /* Optional: Limit the height for consistency */
+  border-radius: 4px; /* Optional: slightly rounded corners */
+  /* border: 2px solid #80ced6; Border around the image */
+}
+
+/* Style the text */
+.exp .card .text {
+  font-size: 22px;
+  font-weight: 500;
+  /* color: #80ced6; */
+  margin-top: 15px; /* Add space between the image and the title */
+}
+
+
 
 /* For large devices */
 /* @media screen and (max-width: 992px) {
