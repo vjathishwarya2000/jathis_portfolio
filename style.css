@@ -429,10 +429,10 @@ section .title::after {
   width: 55%;
 }
 .skills-content .right .mysql::before {
-  width: 70%;
+  width: 80%;
 }
 .skills-content .right .figma::before {
-  width: 75%;
+  width: 70%;
 }
 
 /* teams section styling */
